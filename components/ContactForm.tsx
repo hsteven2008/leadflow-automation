@@ -60,23 +60,26 @@ export default function ContactForm() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const [error, setError] = useState("");
+
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
 
-    // ── CONNECT YOUR BACKEND HERE ──────────────────────────────────────────
-    // Example Formspree:
-    // const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
-    // await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
-    //
-    // Example webhook:
-    // const webhookUrl = process.env.NEXT_PUBLIC_ZAPIER_WEBHOOK_URL;
-    // await fetch(webhookUrl, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
-    // ──────────────────────────────────────────────────────────────────────
+    const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT as string;
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(form),
+    });
 
-    await new Promise((r) => setTimeout(r, 800)); // simulate network
     setLoading(false);
-    setSubmitted(true);
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Something went wrong. Please try again or email hsteven2008@gmail.com directly.");
+    }
   };
 
   if (submitted) {
@@ -150,6 +153,9 @@ export default function ContactForm() {
         </div>
       </div>
 
+      {error && (
+        <p className="text-red-600 text-sm text-center">{error}</p>
+      )}
       <button
         type="submit"
         disabled={loading}
