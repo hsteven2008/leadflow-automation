@@ -243,9 +243,9 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-left mb-8">
             {[
-              { name: "Starter Automation", price: "From $299", desc: "One simple workflow to get started." },
-              { name: "Business Workflow", price: "From $799", desc: "CRM, automation, AI summary, and dashboard." },
-              { name: "Custom Internal Tool", price: "From $1,500", desc: "Private dashboard or mini CRM for your team." },
+              { name: "Starter Automation", price: "From $149", desc: "One simple workflow to get started." },
+              { name: "Business Workflow", price: "From $449", desc: "CRM, automation, AI summary, and dashboard." },
+              { name: "Custom Internal Tool", price: "From $999", desc: "Private dashboard or mini CRM for your team." },
             ].map((p) => (
               <div key={p.name} className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
                 <h3 className="font-bold text-gray-900 text-lg mb-1">{p.name}</h3>

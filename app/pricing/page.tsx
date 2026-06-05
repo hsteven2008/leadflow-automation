@@ -6,13 +6,13 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, transparent pricing for LeadFlow Automation services. Starting at $299 for a single workflow up to $1,500+ for a custom internal tool or mini CRM.",
+    "Simple, transparent pricing for LeadFlow Automation services. Starting at $149 for a single workflow up to $999+ for a custom internal tool or mini CRM.",
 };
 
 const plans = [
   {
     name: "Starter Automation",
-    price: "Starting at $299",
+    price: "Starting at $149",
     bestFor: "Small businesses that need one simple workflow to get organized.",
     includes: [
       "One intake form or lead capture form",
@@ -26,7 +26,7 @@ const plans = [
   },
   {
     name: "Business Workflow",
-    price: "Starting at $799",
+    price: "Starting at $449",
     bestFor: "Businesses with repeated admin tasks or messy lead follow-up.",
     includes: [
       "Intake workflow with form and routing",
@@ -43,7 +43,7 @@ const plans = [
   },
   {
     name: "Custom Internal Tool",
-    price: "Starting at $1,500",
+    price: "Starting at $999",
     bestFor: "Teams that need a private dashboard, mini CRM, or admin portal.",
     includes: [
       "Private web-based dashboard",
