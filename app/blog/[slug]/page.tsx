@@ -209,6 +209,194 @@ const postContent: Record<string, React.ReactNode> = {
       </p>
     </article>
   ),
+  "stop-losing-leads-from-contact-form": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        Most small businesses have a contact form on their website. Most of those forms are silently
+        losing leads every week — not because of bad traffic, but because of what happens (or doesn&apos;t
+        happen) after someone submits.
+      </p>
+
+      <h2>The typical contact form setup</h2>
+      <p>
+        Someone finds your website, fills out your contact form, and hits submit. What happens next?
+        In most cases: an email lands in your inbox. Maybe you see it that day. Maybe you see it two
+        days later. Maybe it gets buried under ten other emails and you don&apos;t see it at all.
+      </p>
+      <p>
+        Meanwhile, the person who submitted the form has no idea if you received it. They get no
+        confirmation. No acknowledgment. No estimated response time. They&apos;re just left waiting —
+        and the longer they wait, the more likely they are to call someone else.
+      </p>
+
+      <h2>Why this costs you real money</h2>
+      <p>
+        Research on lead response time consistently shows the same thing: the first business to
+        respond wins most of the time. A lead who gets a reply within minutes is far more likely to
+        convert than one who gets a reply the next morning — even if your price and service are
+        identical.
+      </p>
+      <p>
+        Speed signals that you&apos;re organized, responsive, and professional. Silence signals the
+        opposite — even if you&apos;re just busy with other work and fully intend to reply.
+      </p>
+      <p>
+        If your contact form is getting even five or ten submissions a month, losing two or three of
+        those to slow response times adds up quickly. For a $300–$500 service, that&apos;s potentially
+        thousands of dollars in missed revenue per year — from leads who already came to you.
+      </p>
+
+      <h2>The three most common failure points</h2>
+      <p>
+        Most contact form setups fail in one of three ways:
+      </p>
+      <ul>
+        <li>
+          <strong>The submission goes to a shared inbox nobody monitors closely.</strong> Leads sit
+          there for hours or days before someone notices. By then, the urgency is gone.
+        </li>
+        <li>
+          <strong>There&apos;s no confirmation email to the person who submitted.</strong> They don&apos;t
+          know if the form worked. They submitted and heard nothing. Half of them assume it broke
+          and move on.
+        </li>
+        <li>
+          <strong>There&apos;s no system for tracking submissions.</strong> If you get five inquiries in
+          a week and only follow up on three, the other two disappear — and you have no record that
+          they ever existed.
+        </li>
+      </ul>
+
+      <h2>What a simple fix looks like</h2>
+      <p>
+        Fixing this doesn&apos;t require expensive software or a complicated setup. The goal is to make
+        sure three things happen automatically the moment someone submits your form:
+      </p>
+      <ul>
+        <li>The lead gets an immediate confirmation so they know their message was received</li>
+        <li>You get an alert in whatever channel you actually check — email, text, or Slack</li>
+        <li>The submission gets logged somewhere you can review it — a spreadsheet, a tracker, or a simple dashboard</li>
+      </ul>
+      <p>
+        When those three things happen automatically, you&apos;re no longer dependent on checking your
+        inbox at the right moment. The system catches every lead. You respond when you&apos;re ready —
+        and the lead already knows you received their message.
+      </p>
+
+      <h2>The difference it makes</h2>
+      <p>
+        Business owners who set this up consistently report the same experience: they stop worrying
+        about whether leads are slipping through, because they know every single one is captured.
+        They can review a clean list of open inquiries instead of digging through their inbox. And
+        their response rate goes up — not because they&apos;re working harder, but because the system
+        makes it easier to stay on top of things.
+      </p>
+      <p>
+        It&apos;s not a dramatic transformation. It&apos;s a simple layer of automation that makes sure the
+        work you&apos;ve already done — building a website, attracting visitors, getting them to submit —
+        actually results in a conversation.
+      </p>
+
+      <h2>The bottom line</h2>
+      <p>
+        If you have a contact form and no automated follow-up system behind it, you are losing leads.
+        Not sometimes — regularly. The fix is straightforward and doesn&apos;t require changing your
+        website or learning new software.
+      </p>
+      <p>
+        LeadFlow Automation sets up lead capture and notification systems for small businesses
+        starting at $299. If your contact form submissions are going into a black hole, this is the
+        fastest way to stop the bleeding.
+      </p>
+    </article>
+  ),
+
+  "why-follow-up-reminders-matter": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        Most small business owners know they should follow up more. Most of them don&apos;t — not because
+        they don&apos;t care, but because there&apos;s no system reminding them to do it. The result is a
+        pipeline full of leads that quietly went cold.
+      </p>
+
+      <h2>The follow-up problem most businesses don&apos;t talk about</h2>
+      <p>
+        Here&apos;s a scenario that plays out in small businesses every week: A potential customer reaches
+        out. You respond. They say &quot;sounds good, let me think about it&quot; or &quot;I&apos;ll get back to you.&quot;
+        You move on to the next thing. A week passes. Then two weeks. You think about them briefly,
+        tell yourself you&apos;ll send a follow-up tomorrow — and tomorrow never comes.
+      </p>
+      <p>
+        Meanwhile, they&apos;ve hired someone else. Not because your service was worse. Not because your
+        price was too high. Simply because the other business followed up and you didn&apos;t.
+      </p>
+
+      <h2>Why most follow-ups don&apos;t happen</h2>
+      <p>
+        It&apos;s not laziness. It&apos;s that following up requires remembering — and remembering requires a
+        system. When leads are scattered across your inbox, your notes app, a sticky note on your
+        desk, and your memory, there&apos;s no reliable way to know who needs a follow-up today.
+      </p>
+      <p>
+        You&apos;re not going to check five different places every morning. Nobody does. So the follow-ups
+        that should happen don&apos;t — and the leads that could have converted go cold.
+      </p>
+
+      <h2>What the data says about follow-up timing</h2>
+      <p>
+        Sales research has consistently shown that most deals close after multiple follow-ups — yet
+        most small businesses stop after one. The leads that don&apos;t respond immediately aren&apos;t
+        necessarily uninterested. They&apos;re busy. They forgot. They got distracted. A well-timed
+        follow-up at the right moment is often all it takes to get a response.
+      </p>
+      <p>
+        The businesses that follow up consistently — not aggressively, just persistently — win more
+        of those conversations. The ones that don&apos;t follow up hand those deals to whoever does.
+      </p>
+
+      <h2>What a follow-up reminder system actually does</h2>
+      <p>
+        A follow-up reminder system is simple in concept: it watches your lead tracker and tells you
+        when someone is overdue for contact. That&apos;s it. No AI, no complicated software — just a
+        reliable nudge at the right time.
+      </p>
+      <p>
+        In practice, it looks like this: every morning, you get a short list in your inbox —
+        &quot;These three leads haven&apos;t been contacted in 5+ days.&quot; You look at the list, pick up your
+        phone or open your email, and follow up. The system doesn&apos;t do the follow-up for you — it
+        just makes sure you never forget who needs one.
+      </p>
+      <p>
+        For small businesses that deal with a handful of leads per week, this is often all the
+        difference between closing jobs and watching them go to a competitor.
+      </p>
+
+      <h2>The compounding effect over time</h2>
+      <p>
+        The real value of a follow-up reminder system isn&apos;t any single recovered lead — it&apos;s the
+        cumulative effect over months. If you close even one additional job per month that would
+        have otherwise gone cold, and your average job is worth $500–$1,000, that&apos;s $6,000–$12,000
+        per year from a system that takes a few minutes a day to act on.
+      </p>
+      <p>
+        More importantly, consistent follow-up builds a reputation. Customers remember when you
+        stayed in touch, when you didn&apos;t let them fall through the cracks. That turns into repeat
+        business and referrals — the most reliable source of new work for any small business.
+      </p>
+
+      <h2>The bottom line</h2>
+      <p>
+        If you&apos;re currently managing leads in an inbox or a messy spreadsheet, you&apos;re missing
+        follow-ups. Not occasionally — regularly. The problem isn&apos;t your work ethic; it&apos;s that
+        there&apos;s nothing reminding you who needs attention today.
+      </p>
+      <p>
+        LeadFlow Automation builds follow-up reminder systems as part of every lead tracker setup,
+        starting at $299. If you want to stop losing jobs to competitors who simply followed up
+        faster, this is where to start.
+      </p>
+    </article>
+  ),
 };
 
 // Fallback for posts without full content
