@@ -43,7 +43,7 @@ components/                 # 15 reusable components
   PricingCard.tsx
   DemoCard.tsx
   FAQAccordion.tsx          # Client component — accordion toggle
-  ContactForm.tsx           # Client component — frontend-only, needs backend connected
+  ContactForm.tsx           # Client component — connected to Formspree (working)
   AutomationIdeaGenerator.tsx  # Client component — pure frontend logic, no backend needed
   BlogCard.tsx
   CTASection.tsx
@@ -73,9 +73,9 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 
 | Variable | Purpose | Status |
 |----------|---------|--------|
-| `NEXT_PUBLIC_SITE_URL` | Production URL | ⚠️ Not set yet |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | Business email | ⚠️ Not set yet |
-| `NEXT_PUBLIC_FORMSPREE_ENDPOINT` | Contact form backend | ⚠️ Not connected yet |
+| `NEXT_PUBLIC_SITE_URL` | Production URL | ✅ Set — https://leadflowautomation.vercel.app |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Business email | ✅ Set — hsteven2008@gmail.com |
+| `NEXT_PUBLIC_FORMSPREE_ENDPOINT` | Contact form backend | ✅ Connected — https://formspree.io/f/mdavaeeb |
 | `NEXT_PUBLIC_ZAPIER_WEBHOOK_URL` | Alternative form backend | Optional |
 | `NEXT_PUBLIC_MAKE_WEBHOOK_URL` | Alternative form backend | Optional |
 | `SUPABASE_URL` | Lead database | Optional |
@@ -84,20 +84,43 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 ## What Still Needs to Be Done
 
 ### Critical (do first)
-- [ ] Connect contact form to Formspree — edit `components/ContactForm.tsx`, uncomment fetch block
-- [ ] Set env vars in Vercel dashboard (SITE_URL, CONTACT_EMAIL, FORMSPREE_ENDPOINT)
+- [x] Connect contact form to Formspree — working, tested end-to-end
+- [x] Set env vars in Vercel dashboard (SITE_URL, CONTACT_EMAIL, FORMSPREE_ENDPOINT)
 - [ ] Add Calendly/Cal.com booking link to replace `/contact` CTAs in Header
 
 ### Soon
-- [ ] Add custom domain (e.g. leadflowautomation.com)
+- [ ] Add custom domain (e.g. leadflowautomation.com) — currently on leadflowautomation.vercel.app
 - [ ] Write real content for blog posts — add to `postContent` map in `app/blog/[slug]/page.tsx`
-- [ ] Add first client testimonial to home page (`app/page.tsx`)
+- [ ] Add first client testimonial to home page (`app/page.tsx`) — ask first client after delivery
 - [ ] Create Small Business Automation Checklist PDF → link in `/free-tools`
 
 ### Later
 - [ ] Add Google Analytics (`app/layout.tsx` — add script tag)
 - [ ] Add email newsletter signup (Beehiiv or ConvertKit)
 - [ ] Monthly support offering — add booking link
+
+## How to Handle a Client Request (Workflow)
+
+1. Client submits contact form → email arrives at hsteven2008@gmail.com
+2. Read their `automationGoal` field to understand what they need
+3. Ask clarifying question if needed: **"Do you use a POS system like Square or Toast?"**
+4. Reply with the right tier and scope:
+   - Simple form + Google Sheets tracker → **$149 Starter**
+   - CRM + automation + integrations (e.g. Square API) → **$449 Business**
+   - Custom web dashboard → **$999 Custom**
+5. Client pays → bring the request to Claude Code, build it together step by step
+6. Deliver, walk client through it, ask for a testimonial
+
+## Common Client Scenarios + How to Solve Them
+
+### Restaurant — track daily customer count
+- **No POS:** Tally form → Zapier → Google Sheets. Staff enters total once per shift. ($149)
+- **Has Square/Clover:** Zapier pulls transaction count automatically, no staff input needed. ($449)
+- **Has Toast:** Requires Toast developer account + API setup. ($449, takes longer)
+
+### General rule — always ask first:
+> "Do you use any software already — like Square, Gmail, Google Sheets, or a booking system?"
+Their answer determines which tier and what tools to use.
 
 ## Business Model
 - **Starter Automation** — $149 (one workflow)
@@ -106,13 +129,13 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 - Add-ons: $75–$300 each (AI email, support, extra revisions)
 
 ## Services Offered
-1. Lead Tracker Automation ($299+)
-2. Client Intake Automation ($399+)
-3. Google Sheets CRM Setup ($299+)
-4. Zapier / Make / n8n Workflow Setup ($299+ per workflow)
-5. Custom Internal Dashboard ($1,500+)
-6. AI Email Summary & Follow-Up Automation ($499+)
-7. Mini CRM / Admin Portal ($799+)
+1. Lead Tracker Automation ($149+)
+2. Client Intake Automation ($149+)
+3. Google Sheets CRM Setup ($149+)
+4. Zapier / Make / n8n Workflow Setup ($149+ per workflow)
+5. Custom Internal Dashboard ($999+)
+6. AI Email Summary & Follow-Up Automation ($449+)
+7. Mini CRM / Admin Portal ($449+)
 8. Website + Automation Bundle ($999+)
 
 ## How to Add a Blog Post
