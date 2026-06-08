@@ -28,12 +28,12 @@ export const posts = [
     date: "June 2025",
   },
   {
-    slug: "zapier-vs-make-vs-n8n",
-    title: "Zapier vs Make vs n8n: Which Is Best for Small Businesses?",
+    slug: "real-cost-of-doing-everything-manually",
+    title: "The Real Cost of Doing Everything Manually in Your Small Business",
     description:
-      "A practical comparison of the three most popular automation tools — without the technical jargon.",
-    category: "Automation Tools",
-    readTime: "7 min read",
+      "Manual processes feel free because you're not paying for software. But the real cost — in time, missed leads, and errors — adds up fast.",
+    category: "Automation ROI",
+    readTime: "5 min read",
     date: "May 2025",
   },
   {

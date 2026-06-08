@@ -397,6 +397,286 @@ const postContent: Record<string, React.ReactNode> = {
       </p>
     </article>
   ),
+  "what-is-client-intake-automation": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        A client intake automation is a system that collects, organizes, and routes new customer
+        requests — automatically. Instead of someone manually reading each request, copying it into
+        a spreadsheet, and forwarding it to the right person, the system does all of that the moment
+        a customer submits.
+      </p>
+
+      <h2>What &quot;client intake&quot; actually means</h2>
+      <p>
+        Every service business has an intake process, even if it doesn&apos;t call it that. It&apos;s the
+        moment a potential customer reaches out — through a contact form, an email, a phone call, or
+        a booking request — and your team has to figure out what they need, who should handle it,
+        and what happens next.
+      </p>
+      <p>
+        When intake is manual, someone has to be in the right place at the right time to catch each
+        request. When intake is automated, the system catches everything — whether you&apos;re in a
+        meeting, at lunch, or asleep.
+      </p>
+
+      <h2>The problem with manual intake</h2>
+      <p>
+        Manual intake isn&apos;t just slow — it creates gaps. A new request arrives in an inbox. It needs
+        to be read, summarized, and forwarded. The person it was forwarded to doesn&apos;t check their
+        email until afternoon. The customer has been waiting since morning with no confirmation that
+        anyone even received their message.
+      </p>
+      <p>
+        These delays and gaps feel small in isolation. But for a customer comparing two service
+        providers, the one that acknowledges their request immediately — even just an automated
+        &quot;we got your message, we&apos;ll be in touch within 24 hours&quot; — comes across as more professional
+        and responsive than the one that goes silent.
+      </p>
+
+      <h2>What an automated intake system does</h2>
+      <p>
+        When a customer submits a request, a client intake automation handles several things at once:
+      </p>
+      <ul>
+        <li>Sends an instant confirmation to the customer so they know their message was received</li>
+        <li>Notifies the right person on your team — by email, text, or Slack</li>
+        <li>Logs the submission in a tracker with the customer&apos;s name, contact info, and request details</li>
+        <li>Optionally summarizes the request using AI so your team gets the key points at a glance</li>
+      </ul>
+      <p>
+        None of this requires someone to manually read the email and take action. It all happens in
+        seconds, every time, without fail.
+      </p>
+
+      <h2>Who benefits most from this</h2>
+      <p>
+        Client intake automation is especially valuable for service businesses that receive a steady
+        volume of inbound requests — medical and dental offices, contractors, real estate agents,
+        staffing agencies, cleaning services, senior care facilities, and any team where customer
+        requests come in from multiple channels.
+      </p>
+      <p>
+        If your team regularly asks &quot;did we get back to that person yet?&quot; or &quot;I thought someone was
+        handling that,&quot; a client intake automation solves the root cause of that problem.
+      </p>
+
+      <h2>How complex is it to set up?</h2>
+      <p>
+        For most small businesses, a basic client intake automation — form, confirmation email,
+        internal notification, and log — can be set up in a few days without any custom software
+        development. It connects tools you may already use: a contact form, Gmail, and Google Sheets.
+      </p>
+      <p>
+        More complex setups, like AI-powered request summaries or multi-step routing based on request
+        type, take longer — but they&apos;re still well within reach for businesses that don&apos;t have a
+        dedicated IT team.
+      </p>
+
+      <h2>The bottom line</h2>
+      <p>
+        A client intake automation doesn&apos;t replace your team — it removes the manual steps that slow
+        your team down. Every request gets acknowledged. Every request gets logged. Nobody falls
+        through the cracks because someone was busy or missed an email.
+      </p>
+      <p>
+        LeadFlow Automation builds client intake systems for small businesses starting at $399. If
+        customer requests are currently handled by whoever happens to check the inbox first, this is
+        worth looking into.
+      </p>
+    </article>
+  ),
+
+  "ai-summarize-customer-emails": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        If your team manages a busy email inbox, a significant portion of your day is spent just
+        reading — not responding, not solving problems, just reading to figure out what each email
+        is asking for. AI email summarization cuts that time down dramatically.
+      </p>
+
+      <h2>The hidden cost of a busy inbox</h2>
+      <p>
+        For office managers, admin staff, and small business owners who handle customer communication
+        directly, email is often the biggest time sink of the day. Not because the replies are
+        complicated — but because sorting through the volume takes time. Reading a long email from
+        a customer to extract one key question. Scanning threads to remember where a conversation
+        left off. Deciding what&apos;s urgent versus what can wait until tomorrow.
+      </p>
+      <p>
+        This kind of work is cognitively draining even when it&apos;s not technically difficult. It
+        requires attention and focus, which means it competes with every other task that also requires
+        attention and focus. The inbox wins — and other work gets pushed aside.
+      </p>
+
+      <h2>What AI email summarization actually does</h2>
+      <p>
+        AI email summarization reads an incoming email and produces a short, plain-language summary
+        of what the customer is asking for — in two or three sentences. Instead of reading a
+        paragraph-long message to find the question buried in the middle, you see the summary first
+        and decide immediately whether to handle it now, delegate it, or schedule a response.
+      </p>
+      <p>
+        Beyond summarizing, AI can also tag emails by type or priority. An email asking for a price
+        quote is different from a complaint, which is different from a scheduling request. When those
+        categories are applied automatically, your inbox becomes a sorted, prioritized list instead
+        of a firehose.
+      </p>
+
+      <h2>A practical example</h2>
+      <p>
+        Consider a home services business — plumbing, HVAC, landscaping — that receives 30–50 emails
+        a day from customers. Without any automation, someone reads every email, decides what type it
+        is, and routes it manually. That process might take an hour or more each morning.
+      </p>
+      <p>
+        With AI summarization and tagging in place, each incoming email gets a two-sentence summary
+        and a tag — &quot;Quote Request,&quot; &quot;Scheduling,&quot; &quot;Complaint,&quot; &quot;Follow-Up.&quot; The person handling
+        the inbox sees at a glance what needs attention first. They spend time responding, not
+        deciphering. The same volume of email takes a fraction of the time to process.
+      </p>
+
+      <h2>How it connects to the rest of your workflow</h2>
+      <p>
+        AI email summarization works best when it&apos;s connected to the rest of your intake process.
+        A summarized email can automatically create a new row in your lead tracker, trigger a
+        notification to the right team member, or start a follow-up reminder if no response is
+        logged within 48 hours.
+      </p>
+      <p>
+        On its own, summarization saves reading time. Connected to a workflow, it becomes the first
+        step in a system where nothing falls through the cracks.
+      </p>
+
+      <h2>Is this realistic for a small business?</h2>
+      <p>
+        Yes — and it doesn&apos;t require building anything from scratch. AI tools that can read and
+        summarize email content are available today and can be integrated into existing inboxes
+        without replacing the tools your team already uses. Setup requires configuration, not custom
+        software development.
+      </p>
+      <p>
+        The right setup depends on your email volume, the tools you already use, and what you want
+        to do with the summaries. A simple setup for a small team is very different from a more
+        complex routing system for a larger operation.
+      </p>
+
+      <h2>The bottom line</h2>
+      <p>
+        If your team is spending meaningful time every day just reading and sorting email, AI
+        summarization is one of the highest-ROI automations available right now. The time it saves
+        is immediate, and it doesn&apos;t require changing how your customers reach you.
+      </p>
+      <p>
+        LeadFlow Automation builds AI email summary and routing systems for small businesses starting
+        at $499. If inbox management is eating into your team&apos;s productive hours, this is a good
+        place to start.
+      </p>
+    </article>
+  ),
+
+  "real-cost-of-doing-everything-manually": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        Manual processes feel free. You&apos;re not paying for software. There&apos;s no subscription, no
+        setup fee, no vendor. But the actual cost — measured in hours, missed leads, and mistakes —
+        is real and it compounds every single week.
+      </p>
+
+      <h2>The illusion of &quot;free&quot;</h2>
+      <p>
+        When a small business owner does something manually — copies a form submission into a
+        spreadsheet, sends a confirmation email by hand, checks a list of leads to see who needs a
+        follow-up — it feels like the cost is zero. There&apos;s no invoice. No line item.
+      </p>
+      <p>
+        But time is not free. Every hour spent on repetitive admin work is an hour not spent on
+        revenue-generating activity — serving customers, closing new jobs, building the business.
+        For a business owner billing at even $50 an hour, one hour of manual data entry per day is
+        worth $13,000 a year. In lost productive time. Not software costs — just time.
+      </p>
+
+      <h2>What manual processes actually cost</h2>
+      <p>
+        The costs show up in a few different ways:
+      </p>
+      <ul>
+        <li>
+          <strong>Time:</strong> Copying information between tools, sending the same confirmation
+          emails over and over, manually checking which leads need follow-up — these tasks are
+          often measured in minutes individually but hours weekly.
+        </li>
+        <li>
+          <strong>Errors:</strong> Manual data entry produces mistakes. A phone number copied wrong.
+          A lead status that didn&apos;t get updated. A follow-up date entered incorrectly. Each error
+          costs time to find and fix — and some errors cost customers.
+        </li>
+        <li>
+          <strong>Missed leads:</strong> When a lead arrives in an inbox that nobody is actively
+          monitoring, or when a follow-up gets forgotten because there&apos;s no system to track it,
+          the cost is the entire value of that job. Not a productivity loss — a lost sale.
+        </li>
+        <li>
+          <strong>Slow response times:</strong> Manual processes are only as fast as the person
+          executing them. An automated confirmation email goes out in seconds. A manual one goes
+          out when someone gets to it — which might be hours later.
+        </li>
+      </ul>
+
+      <h2>A realistic example</h2>
+      <p>
+        Consider a small HVAC company that receives 20 service requests per week. Each request
+        comes in through a contact form, gets manually copied into a spreadsheet by the office
+        manager, and triggers a hand-typed confirmation email. That process takes about 5 minutes
+        per request.
+      </p>
+      <p>
+        That&apos;s 100 minutes per week — nearly two hours — spent on a task that adds no value to
+        the customer and could be fully automated. Over a year, that&apos;s 85 hours. If the office
+        manager earns $20/hour, that&apos;s $1,700 in labor cost for a task that an automation could
+        handle in seconds.
+      </p>
+      <p>
+        And that doesn&apos;t include the leads that slipped through during the hour between the form
+        submission and when someone got to it.
+      </p>
+
+      <h2>Why most small businesses haven&apos;t automated yet</h2>
+      <p>
+        The most common reason is the assumption that automation is complicated or expensive. The
+        word &quot;automation&quot; brings to mind enterprise software, developers, and long implementation
+        timelines. For most small businesses, that&apos;s not the reality.
+      </p>
+      <p>
+        A simple automation — form submission triggers a confirmation email and logs the lead in a
+        Google Sheet — can be set up in a matter of days, not months. The upfront cost is a fraction
+        of what the manual process costs over a single year. And once it&apos;s running, it runs without
+        ongoing maintenance.
+      </p>
+
+      <h2>Where to start</h2>
+      <p>
+        The highest-ROI place to start is wherever you spend the most time on repetitive tasks right
+        now. For most service businesses, that&apos;s one of three things: responding to new inquiries,
+        following up with leads, or entering information into a tracker.
+      </p>
+      <p>
+        Automating any one of those three saves meaningful time immediately — and removes a category
+        of errors and missed leads entirely.
+      </p>
+
+      <h2>The bottom line</h2>
+      <p>
+        Manual processes aren&apos;t free — they just invoice you in time and missed opportunity instead
+        of dollars. For most small businesses, the math on automation is straightforward: the time
+        saved in the first few months pays for the setup, and everything after that is pure gain.
+      </p>
+      <p>
+        LeadFlow Automation builds practical automation systems for small businesses starting at
+        $299. If you&apos;re spending hours each week on tasks that could run automatically, it&apos;s worth
+        a conversation.
+      </p>
+    </article>
+  ),
 };
 
 // Fallback for posts without full content
