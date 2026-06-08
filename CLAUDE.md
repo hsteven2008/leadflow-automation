@@ -4,7 +4,8 @@
 A live inbound business website for Phong's AI automation service business. Customers come to the site, use the free Automation Idea Generator, and submit a contact form to get a quote. Built to generate freelance income without cold outreach.
 
 ## Live URLs
-- **Production site:** https://leadflow-automation-nine.vercel.app
+- **Production site:** https://leadflowautomation.vercel.app
+- **Old URL (still works):** https://leadflow-automation-nine.vercel.app
 - **GitHub repo:** https://github.com/hsteven2008/leadflow-automation
 - **Vercel dashboard:** https://vercel.com/hsteven2008-1765s-projects/leadflow-automation
 

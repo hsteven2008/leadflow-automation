@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://leadflowautomation.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://leadflowautomation.vercel.app"),
   title: {
     default: "LeadFlow Automation | AI Lead Tracking & Follow-Up Automation for Small Businesses",
     template: "%s | LeadFlow Automation",
