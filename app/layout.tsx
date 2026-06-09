@@ -55,6 +55,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="yemks45D9goK95MFrgYANYgrPb1RKPIYEzbJTavOqzQ" />
+      </head>
       <body className="antialiased">
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script id="ga-init" strategy="afterInteractive">{`
