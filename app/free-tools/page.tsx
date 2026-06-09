@@ -49,9 +49,8 @@ export default function FreeToolsPage() {
               title="Small Business Automation Checklist"
               description="A simple checklist to find missed leads, repetitive tasks, and follow-up gaps in your current workflow."
               ctaLabel="Get the Checklist →"
-              // TODO: replace this href with a Gumroad, Beehiiv, or ConvertKit link once the PDF is ready
-              ctaHref="/contact"
-              badge="Coming Soon"
+              ctaHref="/checklist"
+              badge="Free · No signup"
             />
             <LeadMagnetCard
               icon="💡"
