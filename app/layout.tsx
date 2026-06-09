@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     description: "Stop losing leads. Automate your follow-ups.",
   },
   robots: { index: true, follow: true },
-  verification: {
-    google: "yemks45D9goK95MFrgYANYgrPb1RKPIYEzbJTavOqzQ",
+  other: {
+    "google-site-verification": "yemks45D9goK95MFrgYANYgrPb1RKPIYEzbJTavOqzQ",
   },
 };
 
