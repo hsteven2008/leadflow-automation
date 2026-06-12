@@ -143,6 +143,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Demo video */}
+      <section className="section bg-white">
+        <div className="container-max">
+          <div className="text-center mb-10">
+            <span className="inline-block text-blue-600 font-semibold text-sm uppercase tracking-widest mb-3">
+              60-Second Overview
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              See how LeadFlow Automation works
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Watch how we help small businesses stop losing leads — in about a minute.
+            </p>
+          </div>
+          <video
+            controls
+            preload="metadata"
+            poster="/demo-video-poster.jpg"
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-gray-200"
+          >
+            <source src="/demo-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
       {/* Problems */}
       <section className="section bg-gray-50">
         <div className="container-max">

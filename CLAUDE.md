@@ -99,6 +99,7 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 - [x] Add Google Analytics — GA4 tracking (G-ZSBMHX0643) in `app/layout.tsx`
 - [ ] Add email newsletter signup (Beehiiv or ConvertKit)
 - [ ] Monthly support offering — add booking link
+- [x] Embed the demo video on the home page — web-optimized copy (8.8 MB, CRF 25) committed at `public/demo-video.mp4` + poster, native `<video>` section after the hero. Source project: `../Leadflow Demo Video/` (re-render there, then re-encode with ffmpeg `-crf 25 -movflags +faststart`)
 
 ## How to Handle a Client Request (Workflow)
 
