@@ -68,6 +68,20 @@ vercel --prod --yes
 ```
 Or just push to GitHub — Vercel auto-deploys on every push.
 
+### ⚠️ Alias gotcha (discovered June 12, 2026)
+`leadflowautomation.vercel.app` is a **manual alias pinned to a specific deployment** —
+it does NOT auto-update when new deploys go out. (It was stuck on a June 5 build for a
+week; the GSC verification tag and demo video weren't actually live until re-pointed.)
+Only `leadflow-automation-nine.vercel.app` auto-updates.
+
+**After every production deploy, re-point the alias:**
+```bash
+vercel ls                      # copy newest deployment URL
+vercel alias set <newest-deployment-url> leadflowautomation.vercel.app
+```
+**Permanent fix (do once, in dashboard):** Project Settings → Domains → add
+`leadflowautomation.vercel.app` as a project domain so it tracks production automatically.
+
 ## Environment Variables
 Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 
