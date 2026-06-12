@@ -90,12 +90,13 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 
 ### Soon
 - [ ] Add custom domain (e.g. leadflowautomation.com) — currently on leadflowautomation.vercel.app
-- [ ] Write real content for blog posts — add to `postContent` map in `app/blog/[slug]/page.tsx`
+- [x] Write real content for blog posts — all 7 posts have full content in `postContent` map in `app/blog/[slug]/page.tsx`
 - [ ] Add first client testimonial to home page (`app/page.tsx`) — ask first client after delivery
-- [ ] Create Small Business Automation Checklist PDF → link in `/free-tools`
+- [x] Create Small Business Automation Checklist → built as print-to-PDF page at `/checklist`, linked from `/free-tools`
+- [ ] Finish Google Search Console verification — meta tag is in `app/layout.tsx`, but site not yet verified in GSC dashboard
 
 ### Later
-- [ ] Add Google Analytics (`app/layout.tsx` — add script tag)
+- [x] Add Google Analytics — GA4 tracking (G-ZSBMHX0643) in `app/layout.tsx`
 - [ ] Add email newsletter signup (Beehiiv or ConvertKit)
 - [ ] Monthly support offering — add booking link
 
