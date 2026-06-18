@@ -94,9 +94,43 @@ const faqPreview = [
   },
 ];
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "LeadFlow Automation",
+  description:
+    "AI-powered lead tracking, follow-up automation, Google Sheets CRMs, and business dashboards for small businesses.",
+  url: "https://leadflowautomation.vercel.app",
+  email: "hsteven2008@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Houston",
+    addressRegion: "TX",
+    addressCountry: "US",
+  },
+  areaServed: [
+    { "@type": "City", name: "Houston", containedInPlace: { "@type": "State", name: "Texas" } },
+    { "@type": "Country", name: "United States" },
+  ],
+  priceRange: "$149–$999",
+  serviceType: [
+    "Lead Tracker Automation",
+    "Client Intake Automation",
+    "Google Sheets CRM Setup",
+    "Zapier Automation Setup",
+    "Make.com Automation Setup",
+    "Custom Internal Dashboard",
+    "Website + Automation Bundle",
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="container-max text-center">
