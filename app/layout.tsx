@@ -36,11 +36,13 @@ export const metadata: Metadata = {
     title: "LeadFlow Automation | AI Lead Tracking & Follow-Up Automation",
     description:
       "Stop losing leads. Automate your follow-ups. LeadFlow Automation builds simple systems for small businesses.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "LeadFlow Automation" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "LeadFlow Automation | AI Lead Tracking & Follow-Up Automation",
     description: "Stop losing leads. Automate your follow-ups.",
+    images: ["/opengraph-image"],
   },
   robots: { index: true, follow: true },
   other: {
