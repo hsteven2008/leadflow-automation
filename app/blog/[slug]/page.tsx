@@ -30,7 +30,7 @@ const postContent: Record<string, React.ReactNode> = {
         submission in a spreadsheet, send you an alert, and remind you who hasn&apos;t been contacted yet.
       </p>
       <p>
-        <strong>The fix:</strong> A lead capture form connected to a Google Sheets tracker with follow-up date columns.
+        <strong>The fix:</strong> A lead capture form connected to a <Link href="/services#lead-tracker" className="text-blue-600 hover:underline">Google Sheets lead tracker</Link> with follow-up date columns.
         LeadFlow Automation builds this starting at $299.
       </p>
 
@@ -46,7 +46,7 @@ const postContent: Record<string, React.ReactNode> = {
         faster and more consistently than you can.
       </p>
       <p>
-        <strong>The fix:</strong> A form-to-email automation that sends a personalized confirmation
+        <strong>The fix:</strong> A <Link href="/services#client-intake" className="text-blue-600 hover:underline">form-to-email automation</Link> that sends a personalized confirmation
         within seconds of every new submission — no manual work required.
       </p>
 
@@ -62,7 +62,7 @@ const postContent: Record<string, React.ReactNode> = {
         tracking, and filters, can completely transform how useful that data is.
       </p>
       <p>
-        <strong>The fix:</strong> A Google Sheets CRM rebuild with proper lead stages, follow-up dates,
+        <strong>The fix:</strong> A <Link href="/services#sheets-crm" className="text-blue-600 hover:underline">Google Sheets CRM rebuild</Link> with proper lead stages, follow-up dates,
         and status tracking — so your team always knows what to do next.
       </p>
 
@@ -78,7 +78,7 @@ const postContent: Record<string, React.ReactNode> = {
         keeps the lead warm while you get back to them with the real response.
       </p>
       <p>
-        <strong>The fix:</strong> A client intake automation that sends an instant confirmation email
+        <strong>The fix:</strong> A <Link href="/services#client-intake" className="text-blue-600 hover:underline">client intake automation</Link> that sends an instant confirmation email
         the moment someone submits a request.
       </p>
 
@@ -105,7 +105,7 @@ const postContent: Record<string, React.ReactNode> = {
         a simple automation setup could save you hours each week and recover leads you&apos;re currently losing.
       </p>
       <p>
-        LeadFlow Automation builds practical systems for small businesses — starting at $299 for a
+        <Link href="/services" className="text-blue-600 hover:underline">LeadFlow Automation</Link> builds practical systems for small businesses — <Link href="/pricing" className="text-blue-600 hover:underline">starting at $299</Link> for a
         single workflow. No complicated software. No enterprise pricing.
       </p>
     </article>
@@ -189,7 +189,7 @@ const postContent: Record<string, React.ReactNode> = {
       </ul>
       <p>
         At that point, a lightweight web-based dashboard or a custom mini CRM might make more sense.
-        LeadFlow Automation builds both — and can help you start with Sheets and migrate later when
+        LeadFlow Automation builds both — a <Link href="/services#sheets-crm" className="text-blue-600 hover:underline">Google Sheets CRM</Link> or a <Link href="/services#dashboard" className="text-blue-600 hover:underline">custom internal dashboard</Link> — and can help you start with Sheets and migrate later when
         you&apos;re ready.
       </p>
 
@@ -203,7 +203,7 @@ const postContent: Record<string, React.ReactNode> = {
         the right automations to keep it updated without manual effort.
       </p>
       <p>
-        LeadFlow Automation builds Google Sheets CRM setups starting at $299. If you&apos;re currently
+        LeadFlow Automation builds <Link href="/services#sheets-crm" className="text-blue-600 hover:underline">Google Sheets CRM setups</Link> <Link href="/pricing" className="text-blue-600 hover:underline">starting at $299</Link>. If you&apos;re currently
         managing leads in a messy spreadsheet or scattered across emails, it&apos;s the fastest way to
         get organized.
       </p>
@@ -304,8 +304,8 @@ const postContent: Record<string, React.ReactNode> = {
         website or learning new software.
       </p>
       <p>
-        LeadFlow Automation sets up lead capture and notification systems for small businesses
-        starting at $299. If your contact form submissions are going into a black hole, this is the
+        LeadFlow Automation sets up <Link href="/services#lead-tracker" className="text-blue-600 hover:underline">lead capture and notification systems</Link> for small businesses
+        <Link href="/pricing" className="text-blue-600 hover:underline"> starting at $299</Link>. If your contact form submissions are going into a black hole, this is the
         fastest way to stop the bleeding.
       </p>
     </article>
@@ -391,8 +391,8 @@ const postContent: Record<string, React.ReactNode> = {
         there&apos;s nothing reminding you who needs attention today.
       </p>
       <p>
-        LeadFlow Automation builds follow-up reminder systems as part of every lead tracker setup,
-        starting at $299. If you want to stop losing jobs to competitors who simply followed up
+        LeadFlow Automation builds follow-up reminder systems as part of every <Link href="/services#lead-tracker" className="text-blue-600 hover:underline">lead tracker setup</Link>,
+        <Link href="/pricing" className="text-blue-600 hover:underline"> starting at $299</Link>. If you want to stop losing jobs to competitors who simply followed up
         faster, this is where to start.
       </p>
     </article>
@@ -479,7 +479,7 @@ const postContent: Record<string, React.ReactNode> = {
         through the cracks because someone was busy or missed an email.
       </p>
       <p>
-        LeadFlow Automation builds client intake systems for small businesses starting at $399. If
+        LeadFlow Automation builds <Link href="/services#client-intake" className="text-blue-600 hover:underline">client intake systems</Link> for small businesses <Link href="/pricing" className="text-blue-600 hover:underline">starting at $399</Link>. If
         customer requests are currently handled by whoever happens to check the inbox first, this is
         worth looking into.
       </p>
@@ -567,8 +567,8 @@ const postContent: Record<string, React.ReactNode> = {
         is immediate, and it doesn&apos;t require changing how your customers reach you.
       </p>
       <p>
-        LeadFlow Automation builds AI email summary and routing systems for small businesses starting
-        at $499. If inbox management is eating into your team&apos;s productive hours, this is a good
+        LeadFlow Automation builds <Link href="/services#ai-email" className="text-blue-600 hover:underline">AI email summary and routing systems</Link> for small businesses <Link href="/pricing" className="text-blue-600 hover:underline">starting
+        at $499</Link>. If inbox management is eating into your team&apos;s productive hours, this is a good
         place to start.
       </p>
     </article>
@@ -671,9 +671,223 @@ const postContent: Record<string, React.ReactNode> = {
         saved in the first few months pays for the setup, and everything after that is pure gain.
       </p>
       <p>
-        LeadFlow Automation builds practical automation systems for small businesses starting at
-        $299. If you&apos;re spending hours each week on tasks that could run automatically, it&apos;s worth
+        <Link href="/services" className="text-blue-600 hover:underline">LeadFlow Automation</Link> builds practical automation systems for small businesses <Link href="/pricing" className="text-blue-600 hover:underline">starting at
+        $299</Link>. If you&apos;re spending hours each week on tasks that could run automatically, it&apos;s worth
         a conversation.
+      </p>
+    </article>
+  ),
+
+  "houston-small-business-automation-guide": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        Houston has over 150,000 small businesses — restaurants, contractors, medical offices, staffing
+        agencies, real estate teams, and more. Most of them are still running on manual processes that
+        eat hours every week. This guide covers what automation actually looks like for Houston business
+        owners, what to tackle first, and what it costs.
+      </p>
+
+      <h2>Why Houston businesses are a good fit for automation</h2>
+      <p>
+        Houston&apos;s business environment is fast-moving and competitive. Whether you&apos;re a contractor
+        bidding on jobs in Katy, a med spa in the Heights, or a staffing agency in Midtown, the same
+        problem shows up everywhere: too many leads and requests coming in through too many channels,
+        and not enough systems to keep up with all of them.
+      </p>
+      <p>
+        The businesses that win aren&apos;t always the ones with the best service — they&apos;re often the ones
+        that respond fastest, follow up consistently, and never let a lead go cold. Automation is what
+        makes that possible without adding headcount.
+      </p>
+
+      <h2>The three most common automation setups for Houston small businesses</h2>
+
+      <h3>1. Lead capture + tracker (most popular starting point)</h3>
+      <p>
+        Someone submits your contact form → they get an instant confirmation → you get an alert →
+        the lead is logged in a Google Sheet with their name, request, and follow-up date. Every
+        lead captured, nothing in the inbox to forget.
+      </p>
+      <p>
+        This is the most common first automation for contractors, cleaning services, real estate
+        agents, and any business that gets inbound inquiries. It solves the &quot;leads slipping through
+        the cracks&quot; problem immediately.{" "}
+        <Link href="/services#lead-tracker" className="text-blue-600 hover:underline">See how the lead tracker works →</Link>
+      </p>
+
+      <h3>2. Client intake system (popular for service businesses)</h3>
+      <p>
+        Medical offices, senior care facilities, staffing agencies, and legal services all share the
+        same problem: client requests come in through multiple channels and someone has to manually
+        sort and route them. A client intake automation handles all of that the moment a request
+        arrives — confirmation to the client, notification to your team, log entry in your tracker.
+      </p>
+      <p>
+        For businesses that handle 20–100+ requests per week, this saves several hours of admin
+        work every single week.{" "}
+        <Link href="/services#client-intake" className="text-blue-600 hover:underline">See the client intake service →</Link>
+      </p>
+
+      <h3>3. Google Sheets CRM (for teams replacing messy spreadsheets)</h3>
+      <p>
+        Houston real estate teams, mortgage brokers, and sales-driven businesses often outgrow their
+        inbox but aren&apos;t ready for Salesforce. A properly structured Google Sheets CRM — with lead
+        stages, follow-up dates, and automation to populate it — gives you the visibility of a real
+        CRM without the subscription cost or learning curve.{" "}
+        <Link href="/services#sheets-crm" className="text-blue-600 hover:underline">See the Google Sheets CRM service →</Link>
+      </p>
+
+      <h2>What automation does NOT look like</h2>
+      <p>
+        A common misconception is that &quot;automation&quot; means replacing people or buying expensive
+        software. For small businesses, that&apos;s not the reality. Most of the automation setups
+        described above use tools you may already have: Gmail, Google Sheets, and a contact form.
+        The automation layer is Zapier or Make.com — tools that connect your existing apps so
+        information flows between them automatically.
+      </p>
+      <p>
+        You don&apos;t need a developer. You don&apos;t need enterprise software. You need a workflow mapped
+        out and built correctly the first time.
+      </p>
+
+      <h2>What does it cost in Houston?</h2>
+      <p>
+        A simple lead tracker setup — form, confirmation email, Google Sheets log, follow-up
+        reminders — typically runs $149–$299 as a one-time setup fee. There&apos;s no ongoing cost
+        beyond the tools themselves (Zapier starts free; Google Sheets is free).
+      </p>
+      <p>
+        More complex setups with multiple workflows, AI email summaries, or custom dashboards
+        range from $449 to $999+. Monthly support is available for businesses that want someone
+        on call when something needs adjusting.
+      </p>
+      <p>
+        The ROI calculation is simple: if the automation saves your team 5 hours per week and
+        your time is worth $30/hour, that&apos;s $600/month in recovered time — from a one-time
+        setup that cost $299.
+      </p>
+
+      <h2>How to find the right automation consultant in Houston</h2>
+      <p>
+        When evaluating anyone who offers automation services, ask these three questions:
+      </p>
+      <ul>
+        <li><strong>Can you show me something you&apos;ve built?</strong> Anyone can describe an automation. Ask for a demo, a screenshot, or a walkthrough.</li>
+        <li><strong>Do you work with businesses my size?</strong> Enterprise consultants often over-engineer solutions for small teams. You want someone who defaults to the simplest thing that solves the problem.</li>
+        <li><strong>What happens after the setup?</strong> Find out if documentation and a walkthrough are included, and whether ongoing support is available.</li>
+      </ul>
+
+      <h2>The bottom line</h2>
+      <p>
+        Houston small businesses don&apos;t need to wait until they&apos;re &quot;big enough&quot; to automate. The
+        businesses that grow fastest are usually the ones that put simple systems in place early —
+        before the volume gets overwhelming.
+      </p>
+      <p>
+        <Link href="/services" className="text-blue-600 hover:underline">LeadFlow Automation</Link> is based in Houston and builds practical automation systems for
+        small businesses. Free consultation, <Link href="/pricing" className="text-blue-600 hover:underline">transparent pricing</Link>, and fast turnaround.
+      </p>
+    </article>
+  ),
+
+  "zapier-vs-make-small-business": (
+    <article className="prose prose-gray max-w-none">
+      <p className="lead text-xl text-gray-600 leading-relaxed mb-8">
+        Zapier and Make.com (formerly Integromat) are the two most popular tools for automating
+        workflows without code. Both connect apps, both handle repetitive tasks — but they work
+        differently and are better suited for different situations. Here&apos;s a plain-English breakdown
+        so you can choose the right one without wasting money.
+      </p>
+
+      <h2>What both tools actually do</h2>
+      <p>
+        Both Zapier and Make let you connect apps — Gmail, Google Sheets, your contact form, your
+        CRM, Slack, and hundreds of others — and define rules for what happens when something occurs.
+        &quot;When someone submits my contact form, add a row to Google Sheets and send them a
+        confirmation email.&quot; That&apos;s the core of what both tools do.
+      </p>
+      <p>
+        The difference is in how they handle complexity, pricing, and the learning curve.
+      </p>
+
+      <h2>Zapier: simple, fast, and widely supported</h2>
+      <p>
+        Zapier is the most widely used automation platform in the world, which means most apps
+        integrate with it natively. Setting up a basic &quot;Zap&quot; (their term for a workflow) is
+        straightforward — it walks you through each step with a clear interface.
+      </p>
+      <p><strong>Zapier is the better choice when:</strong></p>
+      <ul>
+        <li>You need a simple two- or three-step workflow (form → email → log)</li>
+        <li>You&apos;re connecting popular apps (Gmail, Google Sheets, Slack, HubSpot, Calendly)</li>
+        <li>Speed of setup matters — Zapier is faster to configure</li>
+        <li>Someone on your team will manage it without technical help</li>
+      </ul>
+      <p><strong>Zapier&apos;s downsides:</strong></p>
+      <ul>
+        <li>Gets expensive quickly — the free plan is limited, and paid plans start at $19.99/month</li>
+        <li>Each two-step automation = 1 &quot;task.&quot; High-volume automations can burn through your task limit fast</li>
+        <li>Complex multi-step logic (loops, branching, data transformation) is harder to build and harder to read</li>
+      </ul>
+
+      <h2>Make.com: more powerful, more affordable at scale</h2>
+      <p>
+        Make.com uses a visual drag-and-drop &quot;scenario&quot; builder that shows your workflow as a
+        diagram. Each module (trigger, action, filter) is a node you connect visually. It&apos;s harder
+        to learn than Zapier but significantly more capable for complex workflows.
+      </p>
+      <p><strong>Make.com is the better choice when:</strong></p>
+      <ul>
+        <li>Your workflow has multiple steps, branches, or loops</li>
+        <li>You need to transform data — reformat dates, split text, do math, build custom payloads</li>
+        <li>You&apos;re running high-volume automations where Zapier&apos;s task costs would add up</li>
+        <li>You want more visibility into exactly what your automation is doing and why</li>
+      </ul>
+      <p><strong>Make.com&apos;s downsides:</strong></p>
+      <ul>
+        <li>Steeper learning curve — the visual builder is powerful but takes time to get comfortable with</li>
+        <li>Some integrations that exist on Zapier aren&apos;t available on Make (though the gap is closing)</li>
+        <li>Error messages can be harder to interpret when something breaks</li>
+      </ul>
+
+      <h2>A direct comparison</h2>
+      <p>
+        Here&apos;s a side-by-side look at the key differences that matter for small businesses:
+      </p>
+      <ul>
+        <li><strong>Pricing:</strong> Make.com is significantly cheaper for the same volume. Make&apos;s free plan includes 1,000 operations/month; Zapier&apos;s free plan allows only 100 tasks/month.</li>
+        <li><strong>Ease of setup:</strong> Zapier wins for simple workflows. Make wins once you go beyond 3–4 steps.</li>
+        <li><strong>App support:</strong> Zapier has more native integrations. Make supports HTTP requests natively, so you can connect almost anything even without a native integration.</li>
+        <li><strong>Complex logic:</strong> Make handles loops, routers, aggregators, and data transformers natively. Zapier requires workarounds or paid add-ons for the same.</li>
+      </ul>
+
+      <h2>Which one should you use?</h2>
+      <p>
+        For most small businesses starting out with their first automation — a lead capture form,
+        a confirmation email, a Google Sheets log — <strong>Zapier is the faster path</strong>.
+        It takes less time to set up and less time to explain to your team.
+      </p>
+      <p>
+        If you&apos;re running higher volumes (hundreds of form submissions per month), need multi-step
+        logic, or want to keep your ongoing tool costs low, <strong>Make.com is the better
+        investment</strong>. The learning curve pays off quickly.
+      </p>
+      <p>
+        For businesses that are unsure, the recommendation is usually: start with Zapier for the
+        first workflow, then evaluate whether Make makes more sense once you understand what you
+        actually need.
+      </p>
+
+      <h2>The bottom line</h2>
+      <p>
+        Zapier and Make.com aren&apos;t competitors as much as they&apos;re different tools for different
+        situations. The right choice depends on your workflow complexity, task volume, and how much
+        time you want to spend managing it.
+      </p>
+      <p>
+        <Link href="/services#workflow" className="text-blue-600 hover:underline">LeadFlow Automation</Link> builds workflows on both platforms and will recommend the right
+        one for your specific situation. <Link href="/pricing" className="text-blue-600 hover:underline">Workflow setup starts at $299</Link> — and includes a recommendation
+        of which tool fits your use case before any work begins.
       </p>
     </article>
   ),
@@ -710,8 +924,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const relatedPosts = posts.filter((p) => p.slug !== slug).slice(0, 3);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://leadflowautomation.vercel.app" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://leadflowautomation.vercel.app/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://leadflowautomation.vercel.app/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="container-max max-w-3xl mx-auto">

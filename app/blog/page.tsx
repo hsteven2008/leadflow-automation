@@ -72,6 +72,24 @@ export const posts = [
     readTime: "4 min read",
     date: "April 2025",
   },
+  {
+    slug: "houston-small-business-automation-guide",
+    title: "Automation for Houston Small Businesses: What Actually Works",
+    description:
+      "A practical guide to workflow automation for Houston business owners — what tools work, what to automate first, and what it realistically costs.",
+    category: "Local Guide",
+    readTime: "6 min read",
+    date: "June 2025",
+  },
+  {
+    slug: "zapier-vs-make-small-business",
+    title: "Zapier vs. Make.com: Which One Is Right for Your Small Business?",
+    description:
+      "A plain-English comparison of the two most popular automation tools — what each does well, when to use which, and how to choose without wasting money.",
+    category: "Automation Tools",
+    readTime: "5 min read",
+    date: "June 2025",
+  },
 ];
 
 const categories = [...new Set(posts.map((p) => p.category))];

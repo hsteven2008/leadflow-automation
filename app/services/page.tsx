@@ -153,9 +153,40 @@ const services = [
   },
 ];
 
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "LeadFlow Automation Services",
+  itemListElement: services.map((s, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "Service",
+      name: s.title,
+      description: s.description,
+      url: `https://leadflowautomation.vercel.app/services#${s.id}`,
+      provider: {
+        "@type": "LocalBusiness",
+        name: "LeadFlow Automation",
+        url: "https://leadflowautomation.vercel.app",
+      },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "USD",
+        price: s.startingPrice.replace(/[^0-9]/g, ""),
+        availability: "https://schema.org/InStock",
+      },
+    },
+  })),
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="container-max text-center">
