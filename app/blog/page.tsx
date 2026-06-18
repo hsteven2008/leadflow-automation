@@ -16,7 +16,7 @@ export const posts = [
       "If any of these sound familiar, manual workflows are costing you time and leads every single week.",
     category: "Getting Started",
     readTime: "5 min read",
-    date: "June 2025",
+    date: "June 2026",
   },
   {
     slug: "google-sheets-crm-save-lost-leads",
@@ -25,7 +25,7 @@ export const posts = [
       "You don't need Salesforce to stop losing customers. A clean Google Sheet with the right structure is often all a small team needs.",
     category: "CRM & Lead Tracking",
     readTime: "6 min read",
-    date: "June 2025",
+    date: "June 2026",
   },
   {
     slug: "real-cost-of-doing-everything-manually",
@@ -34,7 +34,7 @@ export const posts = [
       "Manual processes feel free because you're not paying for software. But the real cost — in time, missed leads, and errors — adds up fast.",
     category: "Automation ROI",
     readTime: "5 min read",
-    date: "May 2025",
+    date: "June 2026",
   },
   {
     slug: "what-is-client-intake-automation",
@@ -43,7 +43,7 @@ export const posts = [
       "A client intake automation collects, organizes, and routes new customer requests — automatically. Here's how it works and why your business probably needs one.",
     category: "Client Intake",
     readTime: "4 min read",
-    date: "May 2025",
+    date: "June 2026",
   },
   {
     slug: "ai-summarize-customer-emails",
@@ -52,7 +52,7 @@ export const posts = [
       "Spending hours just reading and sorting emails? Here's how AI email summarization works for small businesses and what it actually saves.",
     category: "AI Automation",
     readTime: "5 min read",
-    date: "May 2025",
+    date: "June 2026",
   },
   {
     slug: "stop-losing-leads-from-contact-form",
@@ -61,7 +61,7 @@ export const posts = [
       "Most contact form submissions either go to a cluttered inbox or disappear entirely. Here's a simple automation fix that captures every one.",
     category: "Lead Tracking",
     readTime: "4 min read",
-    date: "April 2025",
+    date: "June 2026",
   },
   {
     slug: "why-follow-up-reminders-matter",
@@ -70,7 +70,7 @@ export const posts = [
       "Studies show most sales happen after the 5th follow-up. Most small businesses never send more than one. Here's how to automate the rest.",
     category: "Follow-Up Automation",
     readTime: "4 min read",
-    date: "April 2025",
+    date: "June 2026",
   },
   {
     slug: "houston-small-business-automation-guide",
@@ -79,7 +79,7 @@ export const posts = [
       "A practical guide to workflow automation for Houston business owners — what tools work, what to automate first, and what it realistically costs.",
     category: "Local Guide",
     readTime: "6 min read",
-    date: "June 2025",
+    date: "June 2026",
   },
   {
     slug: "zapier-vs-make-small-business",
@@ -88,7 +88,7 @@ export const posts = [
       "A plain-English comparison of the two most popular automation tools — what each does well, when to use which, and how to choose without wasting money.",
     category: "Automation Tools",
     readTime: "5 min read",
-    date: "June 2025",
+    date: "June 2026",
   },
 ];
 
