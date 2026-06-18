@@ -68,19 +68,11 @@ vercel --prod --yes
 ```
 Or just push to GitHub — Vercel auto-deploys on every push.
 
-### ⚠️ Alias gotcha (discovered June 12, 2026)
-`leadflowautomation.vercel.app` is a **manual alias pinned to a specific deployment** —
-it does NOT auto-update when new deploys go out. (It was stuck on a June 5 build for a
-week; the GSC verification tag and demo video weren't actually live until re-pointed.)
-Only `leadflow-automation-nine.vercel.app` auto-updates.
-
-**After every production deploy, re-point the alias:**
-```bash
-vercel ls                      # copy newest deployment URL
-vercel alias set <newest-deployment-url> leadflowautomation.vercel.app
-```
-**Permanent fix (do once, in dashboard):** Project Settings → Domains → add
-`leadflowautomation.vercel.app` as a project domain so it tracks production automatically.
+### ✅ Alias resolved (June 12, 2026)
+`leadflowautomation.vercel.app` was previously a manual alias pinned to a specific
+deployment and was stuck on the June 5 build for a week (GSC tag + demo video were not
+live). Fixed by adding the domain as a project domain — it now **auto-updates on every
+push to `master`**, same as `leadflow-automation-nine.vercel.app`.
 
 ## Environment Variables
 Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
@@ -107,7 +99,7 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 - [x] Write real content for blog posts — all 7 posts have full content in `postContent` map in `app/blog/[slug]/page.tsx`
 - [ ] Add first client testimonial to home page (`app/page.tsx`) — ask first client after delivery
 - [x] Create Small Business Automation Checklist → built as print-to-PDF page at `/checklist`, linked from `/free-tools`
-- [ ] Finish Google Search Console verification — meta tag is in `app/layout.tsx`, but site not yet verified in GSC dashboard
+- [ ] Finish Google Search Console verification — meta tag is live on `app/layout.tsx` and confirmed serving on production URL (verified June 12); retry verification in GSC dashboard if not yet completed
 
 ### Later
 - [x] Add Google Analytics — GA4 tracking (G-ZSBMHX0643) in `app/layout.tsx`
