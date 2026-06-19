@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "LeadFlow Automation helps small businesses turn messy lead tracking, manual follow-ups, and repetitive admin work into simple automated systems.",
+    "LeadFlow Automation is built by Phong Hoang, a Houston-based automation consultant helping small businesses turn messy lead tracking and manual workflows into simple automated systems.",
 };
 
 const beliefs = [
@@ -157,6 +157,43 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the founder */}
+      <section className="section bg-white">
+        <div className="container-max max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
+            <div className="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center text-4xl flex-shrink-0">
+              👤
+            </div>
+            <div>
+              <span className="inline-block text-blue-600 font-semibold text-sm uppercase tracking-widest mb-2">
+                The Person Behind It
+              </span>
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">Hi, I&apos;m Phong Hoang</h2>
+              <p className="text-gray-600 leading-relaxed mb-3">
+                I&apos;m a Houston-based automation consultant who helps small businesses set up practical
+                systems for lead tracking, follow-up, and client intake — using tools like Zapier,
+                Make.com, Google Sheets, and n8n.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-3">
+                I started LeadFlow Automation because I kept seeing the same problem: small business
+                owners working hard to bring in leads, then losing them to slow response times or
+                disorganized follow-up. The fix is almost always a simple system — not expensive
+                software.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Every project I take on gets a walkthrough and documentation so your team can run it
+                independently. I&apos;m based in Houston and work with businesses across Texas and beyond.
+              </p>
+              <div className="mt-4">
+                <Link href="/contact" className="text-blue-600 font-semibold hover:underline">
+                  Get in touch →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
