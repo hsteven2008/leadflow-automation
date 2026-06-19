@@ -18,21 +18,23 @@ A live inbound business website for Phong's AI automation service business. Cust
 ## Project Structure
 ```
 app/                        # Next.js App Router pages
-  page.tsx                  # Home
-  services/page.tsx         # Services (8 services detailed)
+  page.tsx                  # Home (LocalBusiness JSON-LD schema)
+  services/page.tsx         # Services (8 services + ItemList/Service JSON-LD schema)
   pricing/page.tsx          # 3 pricing tiers + add-ons
   demos/page.tsx            # Demo cards + Automation Idea Generator
   free-tools/page.tsx       # Lead magnet page
   contact/page.tsx          # Contact form
   about/page.tsx            # Brand story
-  faq/page.tsx              # 15 FAQ items
+  faq/page.tsx              # 15 FAQ items (FAQPage JSON-LD schema)
   blog/
     page.tsx                # Blog index — add new posts HERE (posts array)
-    [slug]/page.tsx         # Post template — add full content HERE (postContent map)
-  sitemap.ts                # Auto-generated sitemap
-  robots.ts                 # robots.txt
+    [slug]/page.tsx         # Post template — add full content HERE (postContent map) + BreadcrumbList schema
+  opengraph-image.tsx       # Auto-generated OG image (1200x630) — served at /opengraph-image
+  gbp-photo/route.tsx       # GBP business photo (1000x1000) — served at /gbp-photo
+  sitemap.ts                # Auto-generated sitemap (18 URLs)
+  robots.ts                 # robots.txt — points to vercel sitemap URL
   globals.css               # Tailwind + Google Fonts (Inter)
-  layout.tsx                # Root layout, global metadata, header/footer
+  layout.tsx                # Root layout, global metadata, OG/Twitter card tags, header/footer
 
 components/                 # 15 reusable components
   Header.tsx                # Nav with mobile hamburger
@@ -95,11 +97,22 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 - [ ] Add Calendly/Cal.com booking link to replace `/contact` CTAs in Header
 
 ### Soon
-- [ ] Add custom domain (e.g. leadflowautomation.com) — currently on leadflowautomation.vercel.app
-- [x] Write real content for blog posts — all 7 posts have full content in `postContent` map in `app/blog/[slug]/page.tsx`
-- [ ] Add first client testimonial to home page (`app/page.tsx`) — ask first client after delivery
+- [ ] Add custom domain (e.g. leadflowautomation.com) — currently on leadflowautomation.vercel.app — biggest remaining trust/authority gap
+- [x] Write real content for blog posts — 9 posts with full content in `postContent` map in `app/blog/[slug]/page.tsx`
+- [ ] Add first client testimonial to home page (`app/page.tsx`) — ask first client after delivery; add `Review` schema too
 - [x] Create Small Business Automation Checklist → built as print-to-PDF page at `/checklist`, linked from `/free-tools`
-- [ ] Finish Google Search Console verification — meta tag is live on `app/layout.tsx` and confirmed serving on production URL (verified June 12); retry verification in GSC dashboard if not yet completed
+- [x] Finish Google Search Console verification — ownership auto-verified via HTML tag on June 17, 2026
+- [ ] Fix GBP hours — currently shows "Open 24 hours", change to Mon–Fri 9AM–6PM
+- [ ] Upload business photo to GBP — use `/gbp-photo` image or generated photo
+- [ ] Complete GBP profile — click "Complete your profile" card in GBP dashboard
+- [ ] Add name (Phong Hoang) to About page for personal branding + local SEO
+
+### SEO — Ongoing
+- [ ] Get first backlink — submit to Clutch.co, UpCity.com; post Houston blog in local FB groups
+- [ ] Get first Google review — ask first client to leave GBP review after delivery
+- [ ] Add 1–2 blog posts per month — keeps site fresh, builds keyword surface area
+- [ ] Check GSC in 2–3 weeks for indexed pages and keyword impressions
+- [ ] Claim $1,000 Google Ads credit (in GBP dashboard) — do AFTER getting custom domain
 
 ### Later
 - [x] Add Google Analytics — GA4 tracking (G-ZSBMHX0643) in `app/layout.tsx`
@@ -161,6 +174,33 @@ Their answer determines which tier and what tools to use.
 - Edit the `services` array in `app/services/page.tsx`
 - Also update the service cards on the home page in `app/page.tsx`
 - Update footer links in `components/Footer.tsx` if needed
+
+## SEO Status (as of June 18, 2026)
+
+### Done
+- Google Search Console verified (HTML tag, June 17, 2026)
+- Sitemap submitted — 18 URLs indexed
+- OG image live at `/opengraph-image` (1200x630, blue branded)
+- GBP photo generated at `/gbp-photo` (1000x1000)
+- JSON-LD schema: FAQPage, LocalBusiness, ItemList+Service, BreadcrumbList (all blog posts)
+- OpenGraph + Twitter card metadata on all pages
+- Per-page unique title + description on all 9 pages + 9 blog posts
+- Internal links: all blog posts link to relevant `/services#[anchor]` and `/pricing`
+- Blog post dates: all set to June 2026
+- robots.txt sitemap URL: points to vercel URL
+- Google Business Profile: created June 18, 2026 — live on Google Search + Maps
+- GA4 tracking: G-ZSBMHX0643
+
+### Blog Posts (9 total)
+1. 5 Signs Your Small Business Needs Automation
+2. How a Simple Google Sheets CRM Can Save Lost Leads
+3. The Real Cost of Doing Everything Manually
+4. What Is a Client Intake Automation?
+5. How AI Can Summarize Customer Emails and Save Admin Time
+6. How to Stop Losing Leads from Your Website Contact Form
+7. Why Follow-Up Reminders Matter for Small Businesses
+8. Automation for Houston Small Businesses: What Actually Works ← local SEO
+9. Zapier vs. Make.com: Which One Is Right for Your Small Business? ← comparison keyword
 
 ## SEO Keywords Targeting
 - AI automation for small business
