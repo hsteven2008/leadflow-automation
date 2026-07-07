@@ -103,8 +103,8 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 - [x] Create Small Business Automation Checklist → built as print-to-PDF page at `/checklist`, linked from `/free-tools`
 - [x] Finish Google Search Console verification — ownership auto-verified via HTML tag on June 17, 2026
 - [x] Fix GBP hours — changed to Mon–Fri 9AM–6PM, Sat–Sun Closed (June 25, 2026)
-- [ ] Upload business photo to GBP — use `/gbp-photo` image or generated photo
-- [ ] Complete GBP profile — click "Complete your profile" card in GBP dashboard
+- [x] Upload business photo to GBP — `/gbp-photo` set as cover photo, `/gbp-logo` set as logo (July 6, 2026)
+- [x] Complete GBP profile — "Complete your profile" checklist finished (July 6, 2026); skipped storefront photo (remote/home-based business, no physical location)
 - [x] Add name (Phong Hoang) to About page for personal branding + local SEO — "Meet the founder" section added June 18, 2026, plus updated meta description
 
 ### SEO — Ongoing
