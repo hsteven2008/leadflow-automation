@@ -5,162 +5,229 @@ export const runtime = "edge";
 export async function GET() {
   return new ImageResponse(
     (
-      <div
-        style={{
-          width: 1000,
-          height: 1000,
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "#0f172a",
-          fontFamily: "sans-serif",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        {/* Background grid dots */}
-        <div style={{
-          position: "absolute", top: 0, left: 0, right: 0, bottom: 0,
-          backgroundImage: "radial-gradient(circle, #1e3a5f 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-          display: "flex",
-          opacity: 0.6,
-        }} />
+      <div style={{
+        width: 1000,
+        height: 1000,
+        display: "flex",
+        flexDirection: "column",
+        backgroundColor: "#ffffff",
+        fontFamily: "sans-serif",
+      }}>
+        {/* Top accent bar */}
+        <div style={{ display: "flex", height: 8, backgroundColor: "#2563eb" }} />
 
-        {/* Top label */}
+        {/* Header */}
         <div style={{
           display: "flex",
+          alignItems: "center",
           justifyContent: "center",
-          paddingTop: 52,
-          position: "relative",
+          gap: 20,
+          paddingTop: 28,
+          paddingBottom: 24,
         }}>
           <div style={{
             display: "flex",
+            width: 60,
+            height: 60,
+            borderRadius: "50%",
+            backgroundColor: "#2563eb",
             alignItems: "center",
-            gap: 12,
-            backgroundColor: "rgba(59,130,246,0.15)",
-            border: "1px solid rgba(59,130,246,0.4)",
-            borderRadius: 100,
-            padding: "10px 28px",
+            justifyContent: "center",
+            flexShrink: 0,
           }}>
-            <span style={{ fontSize: 20 }}>⚡</span>
-            <span style={{ color: "#93c5fd", fontSize: 18, fontWeight: 600 }}>LeadFlow Automation · Houston, TX</span>
+            <span style={{ color: "#ffffff", fontSize: 24, fontWeight: 800 }}>LF</span>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+            <span style={{ fontSize: 40, fontWeight: 800, color: "#0f172a", lineHeight: 1 }}>
+              LeadFlow Automation
+            </span>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ fontSize: 14 }}>📍</span>
+              <span style={{ fontSize: 15, color: "#2563eb", fontWeight: 600 }}>
+                Houston, TX · AI Automation Consultant
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Center — person at laptop */}
-        <div style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          flex: 1,
-          position: "relative",
-          gap: 0,
-        }}>
-          {/* Glow behind person */}
-          <div style={{
-            position: "absolute",
-            width: 280,
-            height: 280,
-            borderRadius: "50%",
-            backgroundColor: "rgba(59,130,246,0.12)",
-            display: "flex",
-          }} />
+        {/* Divider */}
+        <div style={{ display: "flex", height: 1, backgroundColor: "#e2e8f0" }} />
 
-          {/* Person emoji */}
-          <div style={{ display: "flex", fontSize: 100, marginBottom: 8 }}>👨‍💻</div>
+        {/* Stats columns */}
+        <div style={{ display: "flex", flex: 1, alignItems: "stretch" }}>
 
-          {/* Laptop screen preview */}
+          {/* Col 1 — Time saved */}
           <div style={{
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#1e293b",
-            border: "1px solid #334155",
-            borderRadius: 12,
-            padding: "14px 20px",
-            width: 320,
-            gap: 8,
+            alignItems: "center",
+            justifyContent: "center",
+            flex: 1,
+            paddingTop: 32,
+            paddingBottom: 32,
+            paddingLeft: 28,
+            paddingRight: 28,
+            backgroundColor: "#f8fafc",
           }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <span style={{ fontSize: 16 }}>📋</span>
-              <div style={{ flex: 1, height: 8, backgroundColor: "#3b82f6", borderRadius: 4, display: "flex" }} />
+            <div style={{ display: "flex", width: 82, height: 82, borderRadius: "50%", backgroundColor: "#dbeafe", alignItems: "center", justifyContent: "center", marginBottom: 26 }}>
+              <span style={{ fontSize: 40 }}>⏱️</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <span style={{ fontSize: 16 }}>✅</span>
-              <div style={{ flex: 1, height: 8, backgroundColor: "#22c55e", borderRadius: 4, display: "flex" }} />
+            <div style={{ display: "flex", alignItems: "flex-end", gap: 4, marginBottom: 10 }}>
+              <span style={{ fontSize: 120, fontWeight: 900, color: "#2563eb", lineHeight: 1 }}>10</span>
+              <span style={{ fontSize: 34, fontWeight: 700, color: "#2563eb", marginBottom: 16 }}>hrs</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <span style={{ fontSize: 16 }}>📧</span>
-              <div style={{ width: "70%", height: 8, backgroundColor: "#a78bfa", borderRadius: 4, display: "flex" }} />
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#94a3b8", marginBottom: 20 }}>SAVED PER WEEK</span>
+            <div style={{ display: "flex", width: 36, height: 3, backgroundColor: "#2563eb", borderRadius: 2, marginBottom: 20 }} />
+            <span style={{ fontSize: 22, fontWeight: 700, color: "#0f172a", marginBottom: 12, textAlign: "center" }}>Less Admin Work</span>
+            <span style={{ fontSize: 16, color: "#64748b", textAlign: "center", lineHeight: 1.65, marginBottom: 26 }}>
+              No more copy-pasting leads or chasing follow-ups by hand
+            </span>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, alignSelf: "stretch", marginBottom: 22 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "#2563eb", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#475569" }}>Auto-sync form submissions</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "#2563eb", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#475569" }}>Instant Google Sheets update</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "#2563eb", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#475569" }}>Zero manual data entry</span>
+              </div>
             </div>
+            <div style={{ display: "flex", height: 1, backgroundColor: "#e2e8f0", alignSelf: "stretch", marginBottom: 16 }} />
+            <span style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>Avg. setup: 1–2 business days</span>
+          </div>
+
+          <div style={{ display: "flex", width: 1, backgroundColor: "#e2e8f0" }} />
+
+          {/* Col 2 — Leads captured */}
+          <div style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            flex: 1,
+            paddingTop: 32,
+            paddingBottom: 32,
+            paddingLeft: 28,
+            paddingRight: 28,
+            backgroundColor: "#2563eb",
+          }}>
+            <div style={{ display: "flex", width: 82, height: 82, borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.18)", alignItems: "center", justifyContent: "center", marginBottom: 26 }}>
+              <span style={{ fontSize: 40 }}>🎯</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "flex-end", gap: 2, marginBottom: 10 }}>
+              <span style={{ fontSize: 120, fontWeight: 900, color: "#ffffff", lineHeight: 1 }}>100</span>
+              <span style={{ fontSize: 34, fontWeight: 700, color: "#ffffff", marginBottom: 16 }}>%</span>
+            </div>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#93c5fd", marginBottom: 20 }}>GUARANTEED</span>
+            <div style={{ display: "flex", width: 36, height: 3, backgroundColor: "rgba(255,255,255,0.5)", borderRadius: 2, marginBottom: 20 }} />
+            <span style={{ fontSize: 22, fontWeight: 700, color: "#ffffff", marginBottom: 12, textAlign: "center" }}>Leads Captured</span>
+            <span style={{ fontSize: 16, color: "#bfdbfe", textAlign: "center", lineHeight: 1.65, marginBottom: 26 }}>
+              Every form submission lands in your CRM — zero falling through
+            </span>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, alignSelf: "stretch", marginBottom: 22 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.7)", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#bfdbfe" }}>Zapier-powered capture</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.7)", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#bfdbfe" }}>Real-time CRM update</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.7)", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#bfdbfe" }}>Zero lost inquiries</span>
+              </div>
+            </div>
+            <div style={{ display: "flex", height: 1, backgroundColor: "rgba(255,255,255,0.2)", alignSelf: "stretch", marginBottom: 16 }} />
+            <span style={{ fontSize: 13, color: "#93c5fd", fontWeight: 500 }}>Works with any website or contact form</span>
+          </div>
+
+          <div style={{ display: "flex", width: 1, backgroundColor: "#e2e8f0" }} />
+
+          {/* Col 3 — Follow-up */}
+          <div style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            flex: 1,
+            paddingTop: 32,
+            paddingBottom: 32,
+            paddingLeft: 28,
+            paddingRight: 28,
+            backgroundColor: "#f8fafc",
+          }}>
+            <div style={{ display: "flex", width: 82, height: 82, borderRadius: "50%", backgroundColor: "#fef9c3", alignItems: "center", justifyContent: "center", marginBottom: 26 }}>
+              <span style={{ fontSize: 40 }}>⚡</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "flex-end", gap: 4, marginBottom: 10 }}>
+              <span style={{ fontSize: 120, fontWeight: 900, color: "#2563eb", lineHeight: 1 }}>60</span>
+              <span style={{ fontSize: 34, fontWeight: 700, color: "#2563eb", marginBottom: 16 }}>sec</span>
+            </div>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#94a3b8", marginBottom: 20 }}>RESPONSE TIME</span>
+            <div style={{ display: "flex", width: 36, height: 3, backgroundColor: "#2563eb", borderRadius: 2, marginBottom: 20 }} />
+            <span style={{ fontSize: 22, fontWeight: 700, color: "#0f172a", marginBottom: 12, textAlign: "center" }}>Auto Follow-Up</span>
+            <span style={{ fontSize: 16, color: "#64748b", textAlign: "center", lineHeight: 1.65, marginBottom: 26 }}>
+              Leads get a reply before they even consider a competitor
+            </span>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, alignSelf: "stretch", marginBottom: 22 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "#eab308", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#475569" }}>Instant confirmation email</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "#eab308", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#475569" }}>Scheduled follow-up sequences</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ display: "flex", width: 8, height: 8, borderRadius: "50%", backgroundColor: "#eab308", flexShrink: 0 }} />
+                <span style={{ fontSize: 15, color: "#475569" }}>Works 24/7, no exceptions</span>
+              </div>
+            </div>
+            <div style={{ display: "flex", height: 1, backgroundColor: "#e2e8f0", alignSelf: "stretch", marginBottom: 16 }} />
+            <span style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>First reply sent within 60 seconds</span>
           </div>
         </div>
 
-        {/* Workflow nodes row */}
+        {/* Divider */}
+        <div style={{ display: "flex", height: 1, backgroundColor: "#e2e8f0" }} />
+
+        {/* Footer */}
         <div style={{
           display: "flex",
-          justifyContent: "center",
+          flexDirection: "column",
           alignItems: "center",
-          gap: 0,
-          paddingBottom: 48,
-          paddingLeft: 40,
-          paddingRight: 40,
-          position: "relative",
+          justifyContent: "center",
+          paddingTop: 20,
+          paddingBottom: 20,
+          gap: 12,
         }}>
-          {[
-            { icon: "📝", label: "Form\nSubmit" },
-            { icon: "⚡", label: "Auto\nTrigger", highlight: true },
-            { icon: "📊", label: "Sheets\nCRM" },
-            { icon: "📧", label: "Email\nSent" },
-            { icon: "✅", label: "Lead\nCaptured" },
-          ].map((node, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center" }}>
-              <div style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: 6,
-                backgroundColor: node.highlight ? "rgba(59,130,246,0.25)" : "rgba(255,255,255,0.05)",
-                border: node.highlight ? "1px solid #3b82f6" : "1px solid rgba(255,255,255,0.1)",
-                borderRadius: 14,
-                padding: "14px 16px",
-                width: 110,
-              }}>
-                <span style={{ fontSize: 28 }}>{node.icon}</span>
-                <span style={{
-                  color: node.highlight ? "#93c5fd" : "#94a3b8",
-                  fontSize: 13,
-                  fontWeight: 600,
-                  textAlign: "center",
-                }}>
-                  {node.label.replace("\n", " ")}
-                </span>
-              </div>
-              {i < 4 && (
-                <div style={{
-                  display: "flex",
-                  alignItems: "center",
-                  color: "#3b82f6",
-                  fontSize: 20,
-                  paddingLeft: 4,
-                  paddingRight: 4,
-                }}>→</div>
-              )}
+          <span style={{ fontSize: 19, fontWeight: 600, color: "#475569" }}>
+            We build the systems. You focus on your business.
+          </span>
+          <div style={{ display: "flex", gap: 10 }}>
+            <div style={{ display: "flex", backgroundColor: "#f1f5f9", border: "1px solid #e2e8f0", borderRadius: 100, paddingTop: 6, paddingBottom: 6, paddingLeft: 16, paddingRight: 16 }}>
+              <span style={{ fontSize: 13, color: "#64748b", fontWeight: 600 }}>Zapier</span>
             </div>
-          ))}
+            <div style={{ display: "flex", backgroundColor: "#f1f5f9", border: "1px solid #e2e8f0", borderRadius: 100, paddingTop: 6, paddingBottom: 6, paddingLeft: 16, paddingRight: 16 }}>
+              <span style={{ fontSize: 13, color: "#64748b", fontWeight: 600 }}>Make.com</span>
+            </div>
+            <div style={{ display: "flex", backgroundColor: "#f1f5f9", border: "1px solid #e2e8f0", borderRadius: 100, paddingTop: 6, paddingBottom: 6, paddingLeft: 16, paddingRight: 16 }}>
+              <span style={{ fontSize: 13, color: "#64748b", fontWeight: 600 }}>Google Sheets</span>
+            </div>
+            <div style={{ display: "flex", backgroundColor: "#f1f5f9", border: "1px solid #e2e8f0", borderRadius: 100, paddingTop: 6, paddingBottom: 6, paddingLeft: 16, paddingRight: 16 }}>
+              <span style={{ fontSize: 13, color: "#64748b", fontWeight: 600 }}>n8n</span>
+            </div>
+          </div>
+          <span style={{ fontSize: 14, color: "#94a3b8" }}>leadflowautomation.vercel.app</span>
         </div>
 
-        {/* Bottom tagline */}
-        <div style={{
-          display: "flex",
-          justifyContent: "center",
-          paddingBottom: 44,
-          position: "relative",
-        }}>
-          <span style={{ color: "#475569", fontSize: 16 }}>
-            Automating lead tracking · follow-ups · client intake for small businesses
-          </span>
-        </div>
+        {/* Bottom accent bar */}
+        <div style={{ display: "flex", height: 8, backgroundColor: "#2563eb" }} />
       </div>
     ),
     { width: 1000, height: 1000 }
