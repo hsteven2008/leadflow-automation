@@ -94,10 +94,12 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 ### Critical (do first)
 - [x] Connect contact form to Formspree — working, tested end-to-end
 - [x] Set env vars in Vercel dashboard (SITE_URL, CONTACT_EMAIL, FORMSPREE_ENDPOINT)
-- [ ] Add Calendly/Cal.com booking link to replace `/contact` CTAs in Header
+- **Skipped for now (July 6, 2026):** Calendly/Cal.com booking link — Phong prefers leads reach out via the contact form, email, or phone directly rather than self-booking a call. Revisit if lead volume grows enough that scheduling becomes a bottleneck.
+
+### Deprioritized (July 6, 2026)
+- Custom domain (e.g. leadflowautomation.com) — no budget for purchase/maintenance yet, still in development phase with zero clients. Revisit once revenue justifies the cost. Google Ads credit claim also blocked on this.
 
 ### Soon
-- [ ] Add custom domain (e.g. leadflowautomation.com) — currently on leadflowautomation.vercel.app — biggest remaining trust/authority gap
 - [x] Write real content for blog posts — 9 posts with full content in `postContent` map in `app/blog/[slug]/page.tsx`
 - [ ] Add first client testimonial to home page (`app/page.tsx`) — ask first client after delivery; add `Review` schema too
 - [x] Create Small Business Automation Checklist → built as print-to-PDF page at `/checklist`, linked from `/free-tools`
@@ -112,12 +114,12 @@ Stored in `.env.local` (not committed). Set these in Vercel dashboard too.
 - [ ] Get first Google review — ask first client to leave GBP review after delivery
 - [ ] Add 1–2 blog posts per month — keeps site fresh, builds keyword surface area
 - [ ] Check GSC in 2–3 weeks for indexed pages and keyword impressions
-- [ ] Claim $1,000 Google Ads credit (in GBP dashboard) — do AFTER getting custom domain
+- [ ] Claim $1,000 Google Ads credit (in GBP dashboard) — blocked on custom domain (deprioritized, see above)
 
 ### Later
 - [x] Add Google Analytics — GA4 tracking (G-ZSBMHX0643) in `app/layout.tsx`
 - [ ] Add email newsletter signup (Beehiiv or ConvertKit)
-- [ ] Monthly support offering — add booking link
+- [ ] Monthly support offering — booking link (blocked on Calendly decision above)
 - [x] Embed the demo video on the home page — web-optimized copy (8.8 MB, CRF 25) committed at `public/demo-video.mp4` + poster, native `<video>` section after the hero. Source project: `../Leadflow Demo Video/` (re-render there, then re-encode with ffmpeg `-crf 25 -movflags +faststart`)
 
 ## How to Handle a Client Request (Workflow)
